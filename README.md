@@ -1,4 +1,4 @@
-Урок 3. Работа с сетью
+Урок 6. Работа с сетью
 
 Задание Необходимо очистить ViewController и добавить на него WKWebView(WKWebView). Для этого необходимо вверху импортировать WebKit, затем добавить WKWebView в качестве subview и сделать контроллер делегатом для webView (для этого ViewController должен соответствовать WKNavigationDelegate). Затем необходимо начать загрузку, например, во viewDidLoad(). Для этого вызывается webView.load и передается URLRequest. Подробнее о запросе, который необходимо отправить можно прочитать здесь: <https://dev.vk.com/api/oauth-parameters>. Также предварительно необходимо “Создать приложение”. Сделать это можно кликнув на “Создать приложение” здесь: <https://dev.vk.com/>. Затем необходимо реализовать метод func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void). Token и userID нам еще понадобятся для дальнейших запросов.
 
